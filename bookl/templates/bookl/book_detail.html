@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'index.html'%}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Book Detail</title>
+</head>
+<body>
+<p> <h2>{{ book.name }}</h2> <h4>by {{book.author}}</h4>
+Publisher: {{ book.publisher }} <br>
+Number of pages: {{ book.pgnumber }} <br>
+</p>
+<p> <a href="{% url 'bookl:book_update' book.id %}">Update</a> |
+    <a href="{% url 'bookl:book_delete' book.id %}">Delete</a>
+</p>
+</body>
+{% endblock content %}
+</html>
