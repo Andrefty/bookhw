@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+{% extends 'index.html'%}
+{% block content %}
 <head>
     <meta charset="UTF-8">
     <title>{% if object %}Edit Author {% else %} Create New Author {% endif %}</title>
@@ -12,4 +14,5 @@
         <p><input type="submit" class="btn btn-success" value="Submit"></p>
     </form>
 </body>
+{% endblock content %}
 </html>
