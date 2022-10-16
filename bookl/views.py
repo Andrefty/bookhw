@@ -33,11 +33,11 @@ class AuthorCreateView(CreateView):
     form_class = AuthorForm
     success_url = reverse_lazy('bookl:book_list')
 
-class AuthorUpdateView(UpdateView):
-    model = Author
-    form_class = AuthorForm
-    success_url = reverse_lazy('bookl:book_list')
+# class AuthorUpdateView(UpdateView):
+#     model = Author
+#     form_class = AuthorForm
+#     success_url = reverse_lazy('bookl:book_list')
 
-class AuthorDeleteView(DeleteView):
-    model = Author
-    success_url = reverse_lazy('bookl:book_list')
+# class AuthorDeleteView(DeleteView):
+#     model = Author
+#     success_url = reverse_lazy('bookl:book_list')

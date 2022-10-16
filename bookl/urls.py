@@ -16,10 +16,10 @@ urlpatterns = [
     re_path(r'^(?P<pk>\d+)/$', views.BookDetailView.as_view(), name='book_detail'),
     # Update a task
     re_path(r'^(?P<pk>\d+)/update/$', views.BookUpdateView.as_view(), name='book_update'),
-    re_path(r'^(?P<pk>\d+)/updateauth/$', views.AuthorUpdateView.as_view(), name='author_update'),
+    # re_path(r'^(?P<pk>\d+)/updateauth/$', views.AuthorUpdateView.as_view(), name='author_update'),
     # Delete a task
     re_path(r'^(?P<pk>\d+)/delete/$', views.BookDeleteView.as_view(), name='book_delete'),
-    re_path(r'^(?P<pk>\d+)/deleteauth/$', views.AuthorDeleteView.as_view(), name='author_delete')
+    # re_path(r'^(?P<pk>\d+)/deleteauth/$', views.AuthorDeleteView.as_view(), name='author_delete')
 
     # # Create a task
     # path('create/', views.task_create, name='task_create'),
