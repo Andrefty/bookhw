@@ -12,6 +12,7 @@ class Book(models.Model):
     author = models.ForeignKey(Author, on_delete=models.PROTECT)
     publisher = models.CharField(verbose_name="Book publisher", max_length=100)
     pgnumber = models.IntegerField(verbose_name="Book pages")
+    photo=models.ImageField(upload_to='upload/')
 
     def __str__(self):
         return self.name

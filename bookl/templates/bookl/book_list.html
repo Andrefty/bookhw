@@ -9,7 +9,7 @@
 <body>
 <h3>Book List</h3>
 {% for book in books %}
-    <p>{{ forloop.counter }}. <a href="{% url 'bookl:book_detail' book.id %}"> {{ book.name }}</a> by {{ book.author }}
+    <p>{{ forloop.counter }}. <img src="{{book.photo.url}}" height=50vw style="vertical-align:middle"> <a href="{% url 'bookl:book_detail' book.id %}"> - {{ book.name }}</a> by {{ book.author }}
         (<a href="{% url 'bookl:book_update' book.id %}">Update</a> |
         <a href="{% url 'bookl:book_delete' book.id %}">Delete</a>)
     </p>
